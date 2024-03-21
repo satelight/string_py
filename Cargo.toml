@@ -1,0 +1,6 @@
+[workspace]
+members = ["string_py", "string_py_test"]
+resolver = "2"
+
+[workspace.dependencies]
+
