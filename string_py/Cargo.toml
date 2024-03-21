@@ -3,8 +3,9 @@ name = "string_py"
 version = "0.1.0"
 edition = "2021"
 license = "MIT"
-authors = ["satelight"]
+authors = ["satelight <you@example.com>"]
 description = "This crate aims to make the String type as easy to use as the str type in python."
+repository = "https://github.com/satelight/string_py"
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
