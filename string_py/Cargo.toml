@@ -1,6 +1,6 @@
 [package]
 name = "string_py"
-version = "0.1.0"
+version = "0.2.0"
 edition = "2021"
 license = "MIT"
 authors = ["satelight <crazy_soci80@yahoo.co.jp>"]
