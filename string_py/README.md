@@ -3,7 +3,6 @@
 This crate aims to make the String type as easy to use as the str type in python.
 This crate is for multibyte String type such as Japanese.
 
-
 ## example
 
 ```rust
