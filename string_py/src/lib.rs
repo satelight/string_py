@@ -1,8 +1,8 @@
-pub struct StrLikePy {
+pub struct EasyString {
     string_data:String,
 }
 // 次にString型に直にPythonLikeSliceを実装
-impl StrLikePy {
+impl EasyString {
     pub fn new(str_data:&str) -> Self {
         Self { string_data:str_data.to_string() }
     }
@@ -30,15 +30,21 @@ impl StrLikePy {
             }
 
         }
-
         slice_string
+    }
+
+    pub fn len(&self)->usize{
+        self.string_data.chars().count()
     }
 }
 
 
 #[test]
 fn string_py_test(){
-    let string_data = StrLikePy::new("あいうえお");
-    let slice_data = string_data.slice(0, -1);
-    println!("{:?}",slice_data);
+    let easy_string = EasyString::new("あいうえお");
+    let slice_data = easy_string.slice(0, -1);
+    assert_eq!("あいうえ",slice_data);
+    assert_eq!(5,easy_string.len());
+    
+
 }
